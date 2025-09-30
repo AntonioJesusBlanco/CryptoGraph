@@ -1,12 +1,54 @@
-# React + Vite
+📊 CryptoGraphics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CryptoGraphics is a lightweight cryptocurrency dashboard built with React and Recharts. It fetches market data from the CoinGecko API and allows users to explore the evolution of the top cryptocurrencies in real time through interactive charts.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔝 Displays the Top 10 cryptocurrencies by market cap.
 
-## Expanding the ESLint configuration
+💰 Shows the current price of each coin in real time.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📈 Interactive line charts with selectable time ranges (1D, 7D, 30D).
+
+🎨 Custom tooltips with clear and user-friendly price information.
+
+⚡ Fast, responsive, and easy to use.
+
+🚀 Demo
+
+Coming soon (you can deploy easily with GitHub Pages, Vercel, or Netlify).
+
+🛠️ Installation & Setup
+
+Clone the repository:
+
+git clone https://github.com/<your-username>/CryptoGraphics.git
+cd CryptoGraphics
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm run dev
+
+📡 API
+
+This project uses the free CoinGecko API
+ to fetch:
+
+Current market data (/coins/markets)
+
+Historical price data (/coins/{id}/market_chart)
+
+📷 Preview
+
+Add a screenshot or GIF of your app here once deployed!
+
+📜 License
+
+This project is licensed under the MIT License.
+Feel free to use it, modify it, and share it.
