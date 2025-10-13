@@ -2,6 +2,10 @@
 
 CryptoGraphics is a lightweight cryptocurrency dashboard built with React and Recharts. It fetches market data from the CoinGecko API and allows users to explore the evolution of the top cryptocurrencies in real time through interactive charts.
 
+🌐 Demo en vivo
+https://cryptographics.netlify.app/
+
+
 ✨ Features
 
 🔝 Displays the Top 10 cryptocurrencies by market cap.
