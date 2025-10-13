@@ -41,7 +41,7 @@ const Index = () => {
 };
   // 1. Cargar monedas principales (limitamos a 10 para no saturar la API)
   useEffect(() => {
-    fetch("/api/coins/markets?vs_currency=usd&per_page=10&page=1", options)
+    fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10&page=1", options)
       .then((res) => res.json())
       .then((coins) => setCoins(coins))
       .catch((err) => console.error("Error al cargar monedas:", err));
@@ -49,10 +49,7 @@ const Index = () => {
 
   // 2. Obtener histórico de precios
   const fetchChart = (coinId, days) => {
-    fetch(
-      `/api/coins/${coinId}/market_chart?vs_currency=usd&days=${days}&interval=daily`,
-      options
-    )
+      fetch(`https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=usd&days=${days}&interval=daily`, options)
       .then((res) => res.json())
       .then((res) => {
         if (!res.prices) return;
